@@ -62,13 +62,21 @@ li {
   line-height: 40px;
   font-size: 0.8em;
 }
+.navbar__menu > li:hover {
+  background-color: #1E2B4D;
+  border-radius: 20px;
+  color: #fff;
+}
+.navbar__menu > li:hover > a {
+  color: #fff;
+}
 .main__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
-  gap: 20px;
+  padding: 150px 0;
+  gap: 40px;
 }
 .value__container {
   display: flex;
@@ -135,6 +143,9 @@ li {
   .navbar__menu, .topMember {
     display: none;
   }
+  .main__container {
+    padding: 20px;
+  }
   .search {
     width: 90%;
   }
@@ -151,6 +162,7 @@ li {
   .board {
     width: 90%;
     margin-bottom: 20px;
+    margin-left: auto;
   }
   .board__container {
     flex-direction: column;

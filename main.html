@@ -1,70 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="./main.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <nav class="navbar">
-        <img class="navbar__logo" src="./images/개발러스 로고.svg" alt="개발러스 로고">
-        <ul class="navbar__menu">
-          <li><a href="#">멘토 찾기</a></li>
-          <li><a href="#">정보 공유</a></li>
-          <li><a href="#">포트폴리오</a></li>
-          <li><a href="#">직장인</a></li>
-          <li><a href="#">베스트</a></li>
-          <li><a href="#">Q&A</a></li>
-        </ul>
-        <div class="topMember">
-          1위 리액트흑흑 45
-        </div>
-        <div class="member">
-          <div class="box login">
-            <a href="#">로그인</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <img
+            class="navbar__logo"
+            src="./images/개발러스 로고.svg"
+            alt="개발러스 로고"
+          />
+          <ul class="navbar__menu">
+            <li><a href="#">멘토 찾기</a></li>
+            <li><a href="#">정보 공유</a></li>
+            <li><a href="#">포트폴리오</a></li>
+            <li><a href="#">직장인</a></li>
+            <li><a href="#">베스트</a></li>
+            <li><a href="#">Q&A</a></li>
+          </ul>
+          <div class="topMember">1위 리액트흑흑 45</div>
+          <div class="member">
+            <div class="box login">
+              <a href="#">로그인</a>
+            </div>
+            <div class="box join">
+              <a href="#">가입</a>
+            </div>
           </div>
-          <div class="box join">
-            <a href="#">가입</a>
+        </nav>
+      </header>
+      <main>
+        <div class="main__container">
+          <div class="userWelcome">
+            <h1>닉네임 님, 안녕하세요.</h1>
           </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div class="main__container">
-        <div class="userWelcome">
-          <h1>닉네임 님, 안녕하세요.</h1>
-        </div>
-        <div class="welcomeMessage">
-          <p>이미 00,000명의 개발자가 함께하고 있습니다.</p>
-          <p>지금 바로 검색해보세요!</p>
-        </div>
-        <div class="search">
-          <input type="search" class="search-bar">
-          <img class="search-icon" src="./images/search.svg" alt="">
-        </div>
-        <div class="value__container">
-          <div class="valueItem newPost">
-            <p>새 글</p>
-            <p>456</p>
+          <div class="welcomeMessage">
+            <p>이미 00,000명의 개발자가 함께하고 있습니다.</p>
+            <p>지금 바로 검색해보세요!</p>
           </div>
-          <div class="valueItem newReply">
-            <p>새 댓글</p>
-            <p>120</p>
+          <div class="search">
+            <input type="search" class="search-bar" />
+            <span class="material-icons">
+              search
+              </span>
           </div>
-          <div class="valueItem portfolio">
-            <p>포트폴리오</p>
-            <p>231</p>
-          </div>
-          <div class="valueItem totalPost">
-            <p>누적 게시글</p>
-            <p>34,232</p>
+          <div class="value__container">
+            <div class="valueItem newPost">
+              <p>새 글</p>
+              <p>456</p>
+            </div>
+            <div class="valueItem newReply">
+              <p>새 댓글</p>
+              <p>120</p>
+            </div>
+            <div class="valueItem portfolio">
+              <p>포트폴리오</p>
+              <p>231</p>
+            </div>
+            <div class="valueItem totalPost">
+              <p>누적 게시글</p>
+              <p>34,232</p>
+            </div>
           </div>
         </div>
         <div class="board__container">
@@ -81,18 +96,13 @@
             <h1>Q&A</h1>
           </div>
         </div>
-      </div>
-      <div class="writePost">
-        <span class="material-icons">
-          add_circle
-          </span>
-      </div>
-      <div class="findMentor">
-        <span class="material-icons">
-          question_answer
-          </span>
-      </div>
-    </main>
-  </div>
-</body>
+        <div class="writePost">
+          <span class="material-icons"> add_circle </span>
+        </div>
+        <div class="findMentor">
+          <span class="material-icons"> question_answer </span>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
