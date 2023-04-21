@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:space-between;
+  padding: 0 30px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+.navbar__logo {
+  width: 10rem;
+}
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-align: center;
+}
+.member {
+  display: flex;
+  gap: 10px;
+}
+.userWelcome {
+  font-size: 2em;
+  display: none;
+}
+.welcomeMessage {
+  font-size: 2em;
+  text-align: center;
+}
+.welcomeMessage > p {
+  margin: 10px 0;
+}
+.box {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.topMember {
+  width: 200px;
+  padding: 10px 0;
+  text-align: center;
+  border: 3px solid #eee;
+}
+.navbar__menu > li {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 0.8em;
+}
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+.value__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.valueItem {
+  width: 140px;
+  text-align: center;
+  font-size: 1.3em;
+  margin: 20px 0;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 50%;
+}
+.search-bar {
+  width: 100%;
+  height: 60px;
+  border-radius: 25px;
+  border: 3px solid #3B74EC;
+}
+.search-icon {
+  width: 50px;
+  height: 50px;;
+  fill: #fff;
+}
+.board__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.board {
+  width: calc(50% - 200px);
+  height: 300px;
+  border-radius: 30px;
+  background-color: #E5E7EA;
+  text-align: center;
+  color: #fff;
+}
+.material-icons {
+  font-size: 3rem;
+}
+.writePost {
+  right: 100px;
+  color: #3B74EC;
+  position: fixed;
+  bottom: 20px;
+}
+.findMentor {
+  right: 40px;
+  color: #3B74EC;
+  position: fixed;
+  bottom: 20px;
+}
+@media screen and (max-width:768px) {
+  .navbar__menu, .topMember {
+    display: none;
+  }
+  .search {
+    width: 90%;
+  }
+  .value__container {
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    gap: 0;
+    box-sizing: border-box;
+  }
+  .welcomeMessage {
+    font-size: 1.6em;
+  }
+  .board {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .board__container {
+    flex-direction: column;
+    width: 90%;
+    box-sizing: border-box;
+  }
+
+}
