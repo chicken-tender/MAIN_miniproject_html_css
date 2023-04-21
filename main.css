@@ -54,7 +54,7 @@ li {
   width: 200px;
   padding: 10px 0;
   text-align: center;
-  border: 3px solid #eee;
+  border: 3px solid #C6DEF7;
 }
 .navbar__menu > li {
   width: 100px;
@@ -90,6 +90,15 @@ li {
   font-size: 1.3em;
   margin: 20px 0;
 }
+.valueItem > p {
+  margin: 20px 0;
+}
+.valueItem > p:nth-child(1) {
+  font-weight: lighter;
+}
+.valueItem > p:nth-child(2) {
+  font-weight: bold;
+}
 .search {
   display: flex;
   align-items: center;
@@ -120,9 +129,31 @@ li {
   width: calc(50% - 200px);
   height: 300px;
   border-radius: 30px;
-  background-color: #E5E7EA;
+  background-color: #C6DEF7;
   text-align: center;
-  color: #fff;
+  color: #000;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+.userInfo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.viewCount, .replyCount {
+  margin-left: auto;
+}
+.profileImg {
+  width: 40px;
+  height: 40px;
+  background-image: url("./images/profile.PNG");
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
 }
 .material-icons {
   font-size: 3rem;
