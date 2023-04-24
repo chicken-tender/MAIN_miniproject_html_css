@@ -33,17 +33,6 @@ li {
   display: flex;
   gap: 10px;
 }
-.userWelcome {
-  font-size: 2em;
-  display: none;
-}
-.welcomeMessage {
-  font-size: 2em;
-  text-align: center;
-}
-.welcomeMessage > p {
-  margin: 10px 0;
-}
 .box {
   width: 60px;
   height: 60px;
@@ -69,6 +58,17 @@ li {
 }
 .navbar__menu > li:hover > a {
   color: #fff;
+}
+.userWelcome {
+  font-size: 2em;
+  display: none;
+}
+.welcomeMessage {
+  font-size: 2em;
+  text-align: center;
+}
+.welcomeMessage > p {
+  margin: 10px 0;
 }
 .main__container {
   display: flex;
@@ -126,6 +126,7 @@ li {
   flex-wrap: wrap;
   gap: 20px;
   flex-direction: row;
+  margin-bottom: 100px;
 }
 .board__item {
   width: calc(50% - 200px);
@@ -156,8 +157,9 @@ li {
   padding: 10px;
 }
 .boardItem__container:hover {
-  background-color: #eee;
+  background-color: #E5E7EA;
   border-radius: 10px;
+  cursor: pointer;
 }
 .boardItem1 {
   display: flex;
@@ -216,7 +218,39 @@ li {
   position: fixed;
   bottom: 20px;
 }
-
+footer {
+  background-color: #E5E7EA;
+  color: #616161;
+}
+.sitemap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 30px 0;
+}
+.sitemap-hd {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.sitemap-hd h1 {
+  font-weight: 600;
+  font-size: 17px;
+}
+.sitemap-hd a {
+  font-size: 0.7em;
+}
+.footer-info {
+  display: flex;
+  font-size: 12px;
+  padding: 20px 100px;
+}
+.etc {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  gap: 20px;
+}
 
 
 @media screen and (max-width:768px) {
@@ -241,5 +275,17 @@ li {
   }
   .board__item {
     width: 90%;
+  }
+  .footer-info {
+    padding: 0;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .language {
+    padding: 0 20px;
+  }
+  .etc {
+    justify-content: space-evenly;
+    padding: 20px;
   }
 }
