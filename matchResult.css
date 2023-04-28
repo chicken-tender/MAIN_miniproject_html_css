@@ -16,7 +16,7 @@
 .profileImg {
   width: 300px;
   height: 300px;
-  border: 2px solid #eee;
+  border: 4px outset #C6DEF7;
   border-radius: 50%;
   background: url("/images/profile.PNG");
   background-repeat: no-repeat;
