@@ -1,0 +1,122 @@
+.member__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.member__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profileImg {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #eee;
+  border-radius: 50%;
+  background: url("/images/profile.PNG");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.nickname {
+  font-size: 2em;
+}
+
+.button__container {
+  margin: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+p {
+  margin-bottom: 0.5em;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  font-size: 2rem;
+}
+a.button {
+  display: block;
+  position: relative;
+  float: left;
+  width: 230px;
+  height: 100px;
+  padding: 0;
+  margin: 10px 20px 10px 0;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #FFF;
+  border-radius: 10px;
+  transition: all 0.2s ;
+}
+.btnLightBlue {
+  background: #3B74EC;
+}
+.btnLightBlue.btnPush {
+  box-shadow: 0px 8px 0px 0px #002E96;
+}
+.btnPush:hover {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.btnLightBlue.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #002E96;
+}
+
+.message__container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+h1 {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  left:10%;
+  right:0;
+  top:10%;
+  bottom:0;
+  margin: auto;
+  font-weight: 900;
+  color: white;
+  letter-spacing: .5em;
+  font-size: 7vw;  
+  animation: text 1s infinite;
+  mix-blend-mode: screen;
+}
+svg {
+  width: 25%;
+  animation: rotate infinite linear;
+  mix-blend-mode: multiply;
+  margin: 0 -8%;
+}
+svg:nth-child(1) {
+  fill: #3B74EC;
+  animation-duration: 4s;
+}
+svg:nth-child(2) {
+  fill: #00ACFF;
+  animation-duration: 2s;
+  animation-direction: reverse;
+}
+svg:nth-child(3) {
+  fill: #00D8EE;
+  animation-duration: 6s;
+}
+svg:nth-child(4) {
+  fill: #6DFACD;
+  animation-duration: 3s;
+  animation-direction: reverse;
+}
+@keyframes rotate {
+  100%{transform: rotate(360deg)}
+}

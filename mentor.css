@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 100px;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 80px;
+  font-weight: bold;
+}
+p {
+  margin-bottom: 0.5em;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  font-size: 2rem;
+}
+a.button {
+  display: block;
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 100px;
+  padding: 0;
+  margin: 10px 20px 10px 0;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #FFF;
+  border-radius: 10px;
+  transition: all 0.2s ;
+}
+.btnLightBlue {
+  background: #3B74EC;
+}
+.btnLightBlue.btnPush {
+  box-shadow: 0px 8px 0px 0px #1E2B4D;
+}
+.btnPush:hover {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.btnLightBlue.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #3B74EC;
+}
+@media screen and (max-width:768px) {
+  h1 {
+    font-size: 1.2em;
+    line-height: 40px;
+  }
+  .container {
+    gap: 40px;
+  }
+}
